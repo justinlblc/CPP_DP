@@ -6,7 +6,7 @@
 
 class RobotPoussiere : public Robot {
 public:
-
+    void clone();
 };
 
 #endif

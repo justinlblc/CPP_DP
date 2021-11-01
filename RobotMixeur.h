@@ -6,6 +6,7 @@
 
 class RobotMixeur : public Robot{
 public:
+    void clone();
 };
 
 #endif

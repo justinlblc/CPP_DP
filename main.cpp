@@ -2,7 +2,7 @@
 #include "Robot.h"
 #include "RobotPoussiere.h"
 #include "RobotMixeur.h"
-#inlcude "RobotFactory.h"
+#include "RobotFactory.h"
 
 void main(){
 

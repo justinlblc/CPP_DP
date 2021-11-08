@@ -22,6 +22,7 @@ void Insert(slist **sl, int Val)
     if(tmp) tmp->suiv = elem;
     else *sl = elem;
 }
+
 /******************************************************************************/
 
 int Pop(slist **sl)

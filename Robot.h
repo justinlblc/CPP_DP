@@ -3,9 +3,10 @@
 
 class Robot {
 protected:
-    string name;
+    char name;
+    int size;
 public:
-    Robot(string name, int size);
+    Robot(char name, int size);
     virtual void clone();
 };
 

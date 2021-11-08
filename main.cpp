@@ -9,7 +9,7 @@
 
 #include "SortList.h"
 
-void main(){
+int main(){
 
     slist *Mysl = NULL;
 
@@ -39,5 +39,6 @@ void main(){
     View(Mysl);
 
     Clear(&Mysl);
+    return 0;
 
 }

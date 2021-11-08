@@ -10,9 +10,6 @@ RobotMixeur.o: RobotMixeur.cpp RobotMixeur.h
 RobotPoussiere.o: RobotPoussiere.cpp RobotPoussiere.h
 	g++ -c RobotPoussiere.cpp
 
-RobotMineur.o: RobotMineur.cpp RobotMineur.h
-	g++ -c RobotMineur.cpp
-
 RobotFactory.o: RobotFactory.cpp RobotFactory.h
 	g++ -c RobotFactory.cpp
 
@@ -20,5 +17,5 @@ SortList.o: SortList.cpp SortList.h
 	g++ -c SortList.cpp
 
 main.o: main.cpp RobotMixeur.h Robot.h RobotFactory.h RobotPoussiere.h RobotMineur.h SortList.h
-	g++ -c main.o
+	g++ -c main.cpp
 

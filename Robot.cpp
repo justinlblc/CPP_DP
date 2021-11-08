@@ -2,7 +2,7 @@
 #include "Robot.h"
 
 
-Robot::Robot(string name, int size){
+Robot::Robot(char name, int size){
     this->name = name;
     this->size = size;
 }

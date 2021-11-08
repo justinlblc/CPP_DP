@@ -3,11 +3,12 @@
 #include "RobotPoussiere.h"
 #include "RobotMixeur.h"
 #include "RobotFactory.h"
+#include "SortList.h"
 
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "SortList.h"
+
 
 int main(){
 

@@ -1,4 +1,3 @@
-
 #ifndef CPP_DP_SORTLIST_H
 #define CPP_DP_SORTLIST_H
 

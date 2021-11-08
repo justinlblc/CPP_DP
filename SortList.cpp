@@ -9,7 +9,7 @@ void Insert(slist **sl, int Val)
 {
     slist *tmp = NULL;
     slist *csl = *sl;
-    slist * elem;
+    slist *elem;
     elem = (slist *) malloc(sizeof(slist));
     if(!elem) exit(EXIT_FAILURE);
     elem->valeur = Val;

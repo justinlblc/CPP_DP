@@ -1,5 +1,5 @@
 prog: main.o Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o SortList.o
-	g++ -Wall -o prog Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o main.o
+	g++ -Wall -o prog SortList.o Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o main.o
 
 Robot.o: Robot.cpp Robot.h
 	g++ -Wall -c Robot.cpp

@@ -1,4 +1,4 @@
-prog: main.o Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o
+prog: main.o Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o RobotMineur.o SortList.o
 	g++ -o prog Robot.o RobotFactory.o RobotMixeur.o RobotPoussiere.o main.o
 
 Robot.o: Robot.cpp Robot.h
@@ -10,9 +10,15 @@ RobotMixeur.o: RobotMixeur.cpp RobotMixeur.h
 RobotPoussiere.o: RobotPoussiere.cpp RobotPoussiere.h
 	g++ -c RobotPoussiere.cpp
 
+RobotMineur.o: RobotMineur.cpp RobotMineur.h
+	g++ -c RobotMineur.cpp
+
 RobotFactory.o: RobotFactory.cpp RobotFactory.h
 	g++ -c RobotFactory.cpp
 
-main.o: main.cpp RobotMixeur.h Robot.h RobotFactory.h RobotPoussiere.h
+SortList.o: SortList.cpp SortList.h
+	g++ -c SortList.cpp
+
+main.o: main.cpp RobotMixeur.h Robot.h RobotFactory.h RobotPoussiere.h RobotMineur.h SortList.h
 	g++ -c main.o
 

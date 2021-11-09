@@ -3,7 +3,6 @@
 #include "RobotPoussiere.h"
 #include "RobotMixeur.h"
 #include "RobotMineur.h"
-#include "RobotFactory.h"
 #include "SortList.h"
 
 #include <stdlib.h>

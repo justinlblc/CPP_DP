@@ -3,7 +3,8 @@
 
 
 class RobotFactory {
-
+public:
+	RobotFactory();
 };
 
 

@@ -5,7 +5,7 @@ void RobotMineur::clone() {
 
 };
 
-void RobotMineur::RobotMineur(char name , int size ,int x, int y,int z) : Robot(name,size) {
+RobotMineur::RobotMineur(int id , int size ,int x, int y,int z) : Robot(id,size) {
     position[0]=x;
     position[1]=y;
     position[2]=z;
@@ -26,7 +26,7 @@ void RobotMineur::clearRessources() {
 }
 
 void RobotMineur::getPosition() {
-    for(i=0;i<3;i++) std::cout <<position[i]<<std::endl;
+    for(int i=0;i<3;i++) std::cout <<position[i]<<std::endl;
 }
 
 void RobotMineur::getlistRessourcesMined() {
@@ -34,4 +34,3 @@ void RobotMineur::getlistRessourcesMined() {
 }
 
 
-}

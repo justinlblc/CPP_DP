@@ -1,12 +1,13 @@
-#ifndef ROBOTFACTORY_H
-#define ROBOTFACTORY_H
+#include <string>
+#ifndef ROBOT_H
+#define ROBOT_H
 
 class Robot {
 protected:
-    char name;
+    int id;
     int size;
 public:
-    Robot(char name, int size);
+    Robot(int id, int size);
     virtual void clone();
 };
 

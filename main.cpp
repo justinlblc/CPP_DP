@@ -12,23 +12,12 @@
 
 int main(){
 
-    RobotMineur rb = RobotMineur(1,4,1,1,1);
-    rb.addRessource(1);
-    rb.getPosition();
-    rb.getlistRessourcesMined();
-    rb.move(0,0,0);
-    rb.getPosition();
-
-     RobotMineur robotCop = RobotMineur(1,4,2,2,2);
-     RobotMineur* robotCopieur = robotCop.clone();
-     robotCopieur->getPosition();
-     robotCop.getPosition();
-     robotCop.move(3,3,3);
-     robotCopieur->getPosition();
-     robotCop.getPosition();
-
-
-
+    RobotMineur robotCloneur = RobotMineur(1,4,1,2,3);
+    RobotMineur* robotClone = robotCloneur.clone();
+    std::cout <<Position du robot cloneu:r<<std::endl;
+    robotCloneur->getPosition();
+    std::cout <<Position du robot cloné:<<std::endl;
+    robotClone.getPosition();
     return 0;
 
 }

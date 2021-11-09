@@ -9,7 +9,7 @@ class RobotMineur : public Robot{
 
 
 public:
-    void RobotMineur(char,int,int,int,int);
+    void RobotMineur(char[],int,int,int,int);
     void clone();
     void addRessource(int);
     void clearRessources();

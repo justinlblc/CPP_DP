@@ -5,7 +5,8 @@ void RobotMineur::clone() {
 
 };
 
-void RobotMineur::RobotMineur(char name , int size ,int x, int y,int z) : Robot(name,size) {
+void RobotMineur::RobotMineur(char[] name , int size ,int x, int y,int z) {
+    Robot(name,size);
     position[0]=x;
     position[1]=y;
     position[2]=z;

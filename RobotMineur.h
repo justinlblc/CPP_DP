@@ -9,8 +9,8 @@ class RobotMineur : public Robot{
 
 
 public:
-    void RobotMineur(char[],int,int,int,int);
-    void clone();
+    RobotMineur(int,int,int,int,int);
+    virtual RobotMineur* clone();
     void addRessource(int);
     void clearRessources();
     void move(int,int,int);

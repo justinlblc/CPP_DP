@@ -3,7 +3,6 @@
 #include "RobotPoussiere.h"
 #include "RobotMixeur.h"
 #include "RobotMineur.h"
-#include "RobotFactory.h"
 #include "SortList.h"
 
 #include <stdlib.h>
@@ -13,7 +12,7 @@
 
 int main(){
 
-    RobotMineur rb = RobotMineur("toto",4,1,1,1);
+    RobotMineur rb = RobotMineur(1,4,1,1,1);
     rb.addRessource(1);
     rb.getPosition();
     rb.getlistRessourcesMined();

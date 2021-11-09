@@ -2,8 +2,8 @@
 #include "Robot.h"
 
 
-Robot::Robot(char[] name, int size){
-    this->name = name;
+Robot::Robot(int id, int size){
+    this->id = id;
     this->size = size;
 }
 void Robot::clone(){

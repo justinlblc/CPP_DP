@@ -10,3 +10,7 @@ Robot::Robot(int id, int size){
      return new Robot(*this);
 
 };
+
+int Robot::getId(){
+    return this->id;
+}

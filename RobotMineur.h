@@ -7,7 +7,6 @@ class RobotMineur : public Robot{
     slist *listRessourcesMined = NULL;
     int position[3];
 
-
 public:
     RobotMineur(int,int,int,int,int);
     virtual RobotMineur* clone();

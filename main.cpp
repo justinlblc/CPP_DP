@@ -12,6 +12,7 @@
 
 int main(){
 
+<<<<<<< HEAD
     //Tests sur robot mineur
     RobotMineur rb = RobotMineur(1,4,1,1,1);
     rb.addRessource(1);
@@ -41,6 +42,12 @@ int main(){
     std::cout << "La vitesse de rotation actuelle du robot mixeur "<< rm2->getId() <<" est de " << rm2->getCurrentSpeed() << " rad/s."<< std::endl;
 
 
+    RobotMineur robotCloneur = RobotMineur(1,4,1,2,3);
+    RobotMineur* robotClone = robotCloneur.clone();
+    std::cout <<"Position du robot cloneu:r"<<std::endl;
+    robotCloneur.getPosition();
+    std::cout <<"Position du robot cloné:"<<std::endl;
+    robotClone->getPosition();
     return 0;
 
 }

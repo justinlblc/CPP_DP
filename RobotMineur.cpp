@@ -1,17 +1,12 @@
 #include <iostream>
 #include "RobotMineur.h"
 
- RobotMineur* RobotMineur::clone() {
-    return new RobotMineur(*this);
-}
+ RobotMineur* RobotMineur::clone() {return new RobotMineur(*this);}
 
-
-
-RobotMineur::RobotMineur(int id , int size ,int x, int y,int z) : Robot(id,size) {
+ RobotMineur::RobotMineur(int id , int size ,int x, int y,int z) : Robot(id,size) {
     position[0]=x;
     position[1]=y;
-    position[2]=z;
-}
+    position[2]=z;}
 
 void RobotMineur::move(int a, int b, int c) {
     position[0]=a;

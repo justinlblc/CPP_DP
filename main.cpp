@@ -19,8 +19,14 @@ int main(){
     rb.move(0,0,0);
     rb.getPosition();
 
-    RobotMineur& robotCop = RobotMineur(1,4,2,2,2);
-    RobotMineur* robotCopieur = robotCop.clone();
+     RobotMineur robotCop = RobotMineur(1,4,2,2,2);
+     RobotMineur* robotCopieur = robotCop.clone();
+     robotCopieur->getPosition();
+     robotCop.getPosition();
+     robotCop.move(3,3,3);
+     robotCopieur->getPosition();
+     robotCop.getPosition();
+
 
 
     return 0;

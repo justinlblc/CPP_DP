@@ -1,7 +1,7 @@
 #include <iostream>
 #include "RobotMineur.h"
 
-RobotMineur* RobotMineur::clone() {
+ RobotMineur* RobotMineur::clone() {
     return new RobotMineur(*this);
 }
 

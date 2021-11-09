@@ -6,7 +6,7 @@
 
 class RobotSauteur : public Robot {
 public:
-    void clone();
+    virtual RobotSauteur* clone();
 };
 
 #endif

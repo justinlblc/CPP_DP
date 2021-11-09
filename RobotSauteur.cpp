@@ -1,6 +1,7 @@
 #include <iostream>
 #include "RobotSauteur.h"
 
-void RobotSauteur::clone() {
+ RobotSauteur* RobotSauteur::clone() {
+     return new RobotSauteur(*this);
 
 };

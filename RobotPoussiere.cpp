@@ -1,6 +1,7 @@
 #include <iostream>
 #include "RobotPoussiere.h"
 
-void RobotPoussiere::clone(){
+ RobotPoussiere* RobotPoussiere::clone(){
+     return new RobotPoussiere(*this);
 
 };

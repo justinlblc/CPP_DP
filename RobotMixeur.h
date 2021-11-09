@@ -6,7 +6,7 @@
 
 class RobotMixeur : public Robot{
 public:
-    void clone();
+   virtual RobotMixeur* clone();
 };
 
 #endif

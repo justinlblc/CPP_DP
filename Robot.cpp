@@ -6,6 +6,7 @@ Robot::Robot(int id, int size){
     this->id = id;
     this->size = size;
 }
-void Robot::clone(){
+ Robot* Robot::clone(){
+     return new Robot(*this);
 
 };

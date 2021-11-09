@@ -1,6 +1,7 @@
 #include <iostream>
 #include "RobotMixeur.h"
 
-void RobotMixeur::clone() {
+ RobotMixeur* RobotMixeur::clone() {
+     return new RobotMixeur(*this);
 
 };
